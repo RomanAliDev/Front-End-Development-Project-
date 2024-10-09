@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #2e2e45;
+}
+.time,.right-side,.right-top,.right-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+.digital-clock{
+    color: #fff;
+    background-color: #2d2f38;
+    width: 380px;
+    padding: 25px 40px;
+    box-shadow: 0px 5px 8px rgba(14, 21, 37, 0.8);
+    border-radius: 10px;
+}
+#hours{
+    font-weight: 600;
+    padding: 0px 10px;
+    line-height: 120px;
+    font-size: 8em;
+    background: -webkit-linear-gradient(90deg,rgb(6, 31, 88),white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-side{
+    flex-direction: column;
+}
+#dots{
+    font-size: 4em;
+    color: grey;
+    margin-bottom: 5px;
+}
+#mintues{
+    font-size: 4em;
+    font-weight: 500;
+    margin-left: 10px;
+    background: -webkit-linear-gradient(90deg,rgb(2, 30, 102),white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-bottom{
+    margin-left: 10px;
+    transform: translateY(-5px);
+}
+#period,#seconds{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+#period{
+    color: orange;
+}
